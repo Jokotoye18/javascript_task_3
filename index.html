@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript task</title>
+</head>
+<body>
+    <script>
+        var numbers = [];
+        
+        function myfunc(integer){
+            for (var i=1; i <= integer; i++){
+                var y = '';
+                if(i%2 === 0){
+                    y+='yu';
+                }if(i%3 === 0){
+                    y+='gi';
+                }if(i%5 === 0){
+                    y+='oh';
+                }else if(i%2 !== 0 && i%3 !== 0 && i%5 !== 0){
+                    y+=String(i);
+
+                }numbers.push(y);
+            }console.log(numbers);
+        }
+        myfunc(100)
+    </script>
+</body>
+</html>
