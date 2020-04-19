@@ -7,25 +7,25 @@
 </head>
 <body>
     <script>
-        var numbers = [];
+        var array = [];
         
-        function myfunc(integer){
+        function myFunc(integer){
             for (var i=1; i <= integer; i++){
-                var y = '';
+                var emptyString = '';
                 if(i%2 === 0){
-                    y+='yu';
+                    emptyString += 'yu';
                 }if(i%3 === 0){
-                    y+='gi';
+                    emptyString += 'gi';
                 }if(i%5 === 0){
-                    y+='oh';
+                    emptyString += 'oh';
                 }else if(i%2 !== 0 && i%3 !== 0 && i%5 !== 0){
-                    y+=String(i);
+                    emptyString += String(i);
 
-                }numbers.push(y);
-            }console.log(numbers);
+                }array.push(emptyString);
+            }console.log(array);
         }
-        myfunc(100)
-        myfunc(15)
+        myFunc(100)
+        myFunc(15)
     </script>
 </body>
 </html>
